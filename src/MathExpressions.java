@@ -16,9 +16,19 @@ public class MathExpressions {
         x = x + 3 * 2;
         System.out.println(x);
         int z = x + y;
-        float d = x + 0.3f;
-        Rowal dnwnnw
+//      implicit casting
+//      byte > short > int > long > float > double
+        float d = x + z + 0.3f ;
+        int e = (int)d + z;
+        System.out.println(e);
         System.out.println(z);
+        System.out.println(d);
         System.out.println(res + resDiv + resRealDiv + resDoubleDiv);
+
+        String c = "1.1";
+        double f = Float.parseFloat(c) + 1.1f;
+        System.out.println(f);
+
+
     }
 }
