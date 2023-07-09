@@ -6,6 +6,11 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
+        System.out.printf("Hello World!!!");
+        System.out.print(123123);
+        System.out.println("Can you print any data type???" + false + 123123 + null + undefined);
+        System.out.print(false);
+
         // Press Ctrl+R or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
 
