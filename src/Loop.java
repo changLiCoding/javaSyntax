@@ -13,7 +13,7 @@ public class Loop {
 
         String input = "";
         Scanner scanner = new Scanner(System.in);
-        while (!input.equals("quit")) {
+        while (true) {
             System.out.print("Your input is: ");
             input = scanner.nextLine().toLowerCase().trim();
             if (input.equals("pass")) continue;
