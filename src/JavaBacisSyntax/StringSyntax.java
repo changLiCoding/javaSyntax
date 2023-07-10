@@ -1,3 +1,5 @@
+package JavaBacisSyntax;
+
 public class StringSyntax {
 
     public static void main(String[] args) {

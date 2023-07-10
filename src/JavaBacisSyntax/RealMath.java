@@ -1,3 +1,5 @@
+package JavaBacisSyntax;
+
 public class RealMath {
 
     static public void main(String[] args) {

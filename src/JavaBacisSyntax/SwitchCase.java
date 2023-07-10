@@ -1,3 +1,5 @@
+package JavaBacisSyntax;
+
 import java.util.Scanner;
 
 public class SwitchCase {

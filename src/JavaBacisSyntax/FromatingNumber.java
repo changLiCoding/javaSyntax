@@ -1,3 +1,5 @@
+package JavaBacisSyntax;
+
 import java.text.NumberFormat;
 
 public class FromatingNumber {

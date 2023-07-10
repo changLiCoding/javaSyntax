@@ -1,3 +1,5 @@
+package JavaBacisSyntax;
+
 public class ForEachLoop {
     static public void main(String[] args) {
         double[] arr = {1,2,5.2,2.6,1.2,6,241,5.612};
