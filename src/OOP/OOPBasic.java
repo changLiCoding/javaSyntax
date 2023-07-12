@@ -25,6 +25,15 @@ public class OOPBasic {
 
     static String className = "Animal";
 
+    int getLegsNum() {
+        return this.legsNum;
+    }
+    String getFood() {
+        return this.food;
+    }
+
+
+
     static String getClassName() {
         return className;
     }

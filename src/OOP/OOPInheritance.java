@@ -6,6 +6,7 @@ public class OOPInheritance {
         Human kyle = new Human("Kyle", 2, "steak", 2);
         System.out.println(kyle.getName());
         kyle.shakeHands();
+        kyle.speak("OH my GOD! You Killed Kenny! You Bastard! ");
     }
 }
 
@@ -35,9 +36,9 @@ class Human extends Animal {
         this.handsNum = handsNum;
     }
 
-//    public void speak(String words) {
-//        System.out.println(name + " can speak: " + words+ " I having " + handsNum + " hands! ");
-//    }
+    public void speak(String words) {
+        System.out.println(getName() + " can speak: " + words+ " I having " + handsNum + " hands! ");
+    }
     public void shakeHands() {
         System.out.println("Hello!");
     }
