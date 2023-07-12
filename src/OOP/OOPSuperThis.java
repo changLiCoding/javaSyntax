@@ -17,7 +17,11 @@ public class OOPSuperThis {
 class Parent {
     String name = "Father";
     int age = 58;
-    int sum() {return age + 20;}
+    int sum() {return getAge() + 20;}
+
+    int getAge() {
+        return age;
+    }
     public Parent() {
 
     }
@@ -37,5 +41,9 @@ class Child extends Parent {
     public void printNameFather() {
         super.printName();
     }
-    public int sum() {return super.age + 100;}
+//    public int sum() {return age + 100;}
+
+    int getAge() {
+        return age;
+    }
 }
