@@ -4,15 +4,15 @@ public class OOPHeapStack {
     public static void main(String[] args) {
         int a = 10;
         test(a);
-        System.out.println(a);
+        System.out.println(a); //10
 
         String b = "test";
         testString(b);
-        System.out.println(b);
+        System.out.println(b);  //test
 
         Person student = new Person();
         student.name = "Kyle";
-        System.out.println(student.name);
+        System.out.println(student.name); //
         testPerson(student);
         System.out.println(student.name);
         System.out.println(student.legs);

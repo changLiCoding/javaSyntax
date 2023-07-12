@@ -34,7 +34,7 @@ public class OOPBasic {
 //    }
 
 
-    public Animal(String name, int legsNum, String food) {
+     Animal(String name, int legsNum, String food) {
         System.out.println("Animal Constructor Called. ");
         this.name = name;
         this.legsNum = legsNum;
