@@ -37,7 +37,28 @@ public class ArrayInJava {
         twoDNums[1][1] = "5";
         twoDNums[1][2] = "6";
 
+        String[][] tower = new String[9][17];
 
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 17; j++) {
+                if(j >= ((8) - i) && j <= (8 + i) ) {
+                    tower[i][j] = "8";
+                } else {
+                    tower[i][j] = " ";
+                }
+            }
+        }
+
+        for (String[] strings : tower) {
+            for (String string : strings) {
+                System.out.print(string);
+            }
+            System.out.println(" ");
+        }
+
+        for (String[] strings : tower) {
+            System.out.println(strings);
+        }
     }
 }
 class User1 {
