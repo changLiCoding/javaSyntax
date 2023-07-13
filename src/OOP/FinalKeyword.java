@@ -20,6 +20,9 @@ class VariableKeywords {
      protected final void test() {
         System.out.println("Called method in parent. ");
     }
+
+
+
 }
 class VariableKeywordsChild extends VariableKeywords {
     public VariableKeywordsChild(String name) {
