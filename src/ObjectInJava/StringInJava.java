@@ -55,5 +55,10 @@ public class StringInJava {
         String nameWithLowerFirst = nameWithLotsOfSpaces.replace("CHANG", "chang");
         System.out.println(nameWithLowerFirst);
         System.out.println(nameWithLotsOfSpaces.replaceAll("CHANG|LI", "replaced"));
+
+        System.out.println(name.toLowerCase());
+        System.out.println(name1.toUpperCase());
+        System.out.println(name.equals(name1.toUpperCase()));
+        System.out.println(name1.substring(0, 1).toUpperCase() + name1.substring(1));
     }
 }
