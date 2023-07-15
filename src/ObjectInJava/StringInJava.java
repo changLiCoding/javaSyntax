@@ -60,5 +60,41 @@ public class StringInJava {
         System.out.println(name1.toUpperCase());
         System.out.println(name.equals(name1.toUpperCase()));
         System.out.println(name1.substring(0, 1).toUpperCase() + name1.substring(1));
+
+        char[] chars = nameWithLotsOfSpaces.toCharArray();
+        System.out.println(chars);
+        byte[] bytes = nameWithLotsOfSpaces.getBytes("UTF-8");
+        System.out.println(nameWithLotsOfSpaces.charAt(7));
+        System.out.println(nameWithLotsOfSpaces.indexOf("C"));
+        System.out.println(nameWithLotsOfSpaces.charAt(nameWithLotsOfSpaces.indexOf("C")));
+
+        System.out.println(nameWithLotsOfSpaces.indexOf("LI"));
+        String world = "Hello world world world world word Hello";
+        System.out.println(world.lastIndexOf(world));
+
+        System.out.println(world.contains("word"));
+        System.out.println(world.startsWith("Hello"));
+        System.out.println(world.endsWith("word"));
+
+        String empty = "";
+        System.out.println(empty.isEmpty());
+        String spaceIn = " ";
+        System.out.println(spaceIn.isBlank());
+
+//        for (int j = 0; j < 100; j++) {
+//            spaceIn = spaceIn + j;
+//        }
+
+//        String builder
+        StringBuilder anotherEmpty = new StringBuilder("");
+//        for (int j = 0; j < 100; j++) {
+//            anotherEmpty.append(j);
+//        }
+        anotherEmpty.append("abc");
+        System.out.println(anotherEmpty.length());
+        anotherEmpty.reverse();
+        System.out.println(anotherEmpty);
+        anotherEmpty.insert(2, "d");
+        System.out.println(anotherEmpty);
     }
 }
