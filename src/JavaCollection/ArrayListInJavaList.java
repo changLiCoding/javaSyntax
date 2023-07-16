@@ -18,7 +18,9 @@ public class ArrayListInJavaList {
         list.add("LiCh");
         list.add("LiCha");
         list.add(23123);
-        list.set(1, 234);
+        Object valOld = list.set(1, "new Value");
+
+        System.out.println("Old value in index 1: " + valOld);
         System.out.println(list.get(list.size() - 1).getClass());
         System.out.println(list.get(0).equals(list.get(5)));
 
@@ -28,6 +30,7 @@ public class ArrayListInJavaList {
         System.out.println(list);
         System.out.println(list.size());
         System.out.println(list.get(3));
+
 
         Object valDeleted = list.remove(list.size() - 1);
         System.out.println("Value removed: " + valDeleted);
