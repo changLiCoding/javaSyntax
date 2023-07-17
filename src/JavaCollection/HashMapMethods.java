@@ -38,6 +38,7 @@ public class HashMapMethods {
         Collection<String> values = map.values();
         System.out.println(values);
         Set<Map.Entry<String, String>> entries = map.entrySet();
+
         for (Map.Entry<String, String> entry : entries) {
             String key = entry.getKey();
             String value = entry.getValue();
