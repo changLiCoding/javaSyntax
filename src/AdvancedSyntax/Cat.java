@@ -9,6 +9,7 @@ public class Cat {
         this.age = age;
     }
 
+    @RunImmediately(times = 3)
     public void meow() {
         System.out.println("Meow Meow");
     };
