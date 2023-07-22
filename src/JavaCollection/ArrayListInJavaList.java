@@ -20,6 +20,8 @@ public class ArrayListInJavaList {
         list.add(23123);
         Object valOld = list.set(1, "new Value");
 
+        System.out.println(list.contains("Li"));
+
         System.out.println("Old value in index 1: " + valOld);
         System.out.println(list.get(list.size() - 1).getClass());
         System.out.println(list.get(0).equals(list.get(5)));

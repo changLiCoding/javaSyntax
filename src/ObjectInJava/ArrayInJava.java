@@ -1,5 +1,6 @@
 package ObjectInJava;
 
+
 public class ArrayInJava {
     public static void main(String[] args) {
         String[] names = new String[4];
@@ -7,9 +8,12 @@ public class ArrayInJava {
         names[1] = "Li";
         names[2] = "Chang";
         names[3] = "Li";
+        names[4] = "Index4";
         for (String name : names) {
             System.out.println(name);
         }
+
+
 
         Object[] objs = new Object[2];
         for (Object obj : objs) {
