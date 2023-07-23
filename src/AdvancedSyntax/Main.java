@@ -1,5 +1,7 @@
 package AdvancedSyntax;
 
+import java.io.File;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -12,6 +14,8 @@ public class Main {
         checkVeryImportant((myDog));
 
         checkRunImmediately(myCat);
+
+        checkImportantString(myCat);
 
     }
     public static void checkVeryImportant(Object obj) {
@@ -33,7 +37,13 @@ public class Main {
             }
         }
     }
-
+    public static void checkImportantString(Object obj) throws InvocationTargetException, IllegalAccessException {
+        for (Field field: obj.getClass().getDeclaredFields()) {
+            if(field.isAnnotationPresent(ImportantString.class)) {
+                System.out.println(field.get(obj).toString());
+            }
+        }
+    }
 }
 
 

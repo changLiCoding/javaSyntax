@@ -2,6 +2,7 @@ package AdvancedSyntax;
 
 @VeryImportant
 public class Cat {
+    @ImportantString
     String name;
     int age;
     public Cat(String name, int age) {
